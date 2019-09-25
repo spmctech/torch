@@ -9,6 +9,9 @@ import index from '@/components/index'
 import pageList from '@/components/pages/list'
 import pageEdit from '@/components/pages/edit'
 
+import configList from '@/components/config/list'
+
+
 
 Vue.use(Router)
 Vue.use(iView);
@@ -30,6 +33,11 @@ export default new Router({
       path: '/pages/edit',
       name: '文章编辑',
       component: pageEdit
+    },
+    {
+      path: '/config/list',
+      name: '系统设置',
+      component: configList
     }
   ]
 })

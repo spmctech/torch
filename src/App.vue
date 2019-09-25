@@ -3,12 +3,12 @@
         <Layout>
             <Sider collapsible :collapsed-width="10" :style="{background: '#fff'}">
                 <!-- <Avatar icon="ios-person" size="large" /> -->
-                <Menu active-name="1-2" :theme="light" width="auto" :class="menuitemClasses">
+                <Menu active-name="1-2" theme="light" width="auto" class="menuitemClasses" style="1000px">
                     <MenuItem name="1-1" to="/pages/list">
                         <Icon type="ios-list-box-outline" />
                         <span>文章</span>
                     </MenuItem>
-                    <MenuItem name="1-2">
+                    <MenuItem name="1-2" to="/config/list">
                         <Icon type="ios-settings-outline" />
                         <span>设置</span>
                     </MenuItem>
@@ -20,7 +20,7 @@
                 <div slot="trigger"></div>
             </Sider>
             <Layout>
-                <Content :style="{background: '#fff', minHeight: '220px'}">
+                <Content :style="{background: '#fff', minHeight: '220px', margin: '5px'}">
                     <router-view/>
                 </Content>
             </Layout>

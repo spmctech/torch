@@ -7,17 +7,20 @@
 <template>
     <div>
         <Header class="layout-header-bar">
-            <Menu mode="horizontal" :theme="theme1" active-name="1">
-                <MenuItem name="1">
-                    <Input search enter-button="搜索" size="10" placeholder="输入文章标题" />
-                </MenuItem>
-                <MenuItem name="2" to="/pages/edit">
-                    <Button :size="small" icon="ios-download-outline" type="primary">Download</Button>  
-                </MenuItem>
-            </Menu>    
+            <Row type="flex" justify="end" class="code-row-bg">
+                <Col span="10">
+                </Col>
+                <Col span="6">
+                    <Input search placeholder="输入文字搜索..." style="width: 150px"/>                         
+                    <Button icon="ios-create-outline" type="primary" to="/pages/edit">新文章</Button> 
+                </Col>
+            </Row>
         </Header>
         <Content :style="{background: '#fff'}">
-            
+            <Card :bordered="false">
+                <p slot="title">No border title</p>
+                <p>Content of no border type. Content of no border type. Content of no border type. Content of no border type. </p>
+            </Card>
         </Content>
     </div>
 </template>

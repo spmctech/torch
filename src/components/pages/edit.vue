@@ -6,10 +6,6 @@
 </style>
 <template>
     <div>
-        <Header class="layout-header-bar">
-            <Input search enter-button="搜索" size="10" placeholder="输入文章标题" />
-            <Button :size="small" icon="ios-download-outline" type="primary" to="/pages/edit">Download</Button>            
-        </Header>
         <Content :style="{background: '#fff'}">
              <mavon-editor v-model="markdown"/>    
         </Content>
